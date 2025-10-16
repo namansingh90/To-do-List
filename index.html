@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <style>
+        body
+        {
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(127, 84, 130);
+            align-items: center;
+        }
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            background-color: #8f8cd6;
+            /* align-items: center; */
+             /* height:100vh; */
+             width: 300px; 
+            flex-direction: column;
+            padding :30px;
+            border-radius: 10px;
+            gap: 10px;
+        }
+        .b1{
+            background-color: rgb(142, 232, 6);
+            width: 170px;
+        }
+        .tasks
+        {
+            background-color: rgb(253, 253, 120);
+            padding: 10px;
+        }
+        .b2
+        {
+            background-color: #d065e6;
+            width: 120px;
+        }
+        .mainh
+        {
+            /* padding-bottom: 1px; */
+            border-bottom: 1px;
+            margin-bottom: 9px;
+            justify-content: center;
+            display: flex;
+            /* align-items: center; */
+            /* align-content: center; */
+        }
+        .c_button
+        {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .inp1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 5px;
+            margin-bottom: 0px;
+        }
+        .add_input{
+            background-color: #cf73f0;
+        }
+        .inp1{
+            display: none;
+        }
+        .task_element
+        {
+            /* background-color: pink; */
+              background-color: pink;
+              padding: 5px;
+              display: flex;
+              flex-wrap: wrap; /*  allows wrapping on small screens */
+              align-items: center;
+              gap: 5px;
+              box-sizing: border-box;
+
+
+        }
+        .task_input {
+    flex: 1;
+    min-width: 0;  /*  prevents overflow */
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+}
+
+        .delete_button
+        {
+            background-color: rgb(169, 169, 246);
+            border-radius: 5px;
+        }
+        .done_button
+        {
+            background-color: #8dee91;
+            border-radius: 5px;
+        }
+        .one_of_all
+        {
+            /* display:flex; */
+            margin-bottom: 2px;
+            padding: 1px;
+            /* display: flex; */
+            /* gap:100px */
+        }
+        .task_element.completed 
+        {
+              text-decoration: line-through;
+              color: gray;
+              opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="mainh" style="background-color: rgb(248, 222, 187);border-radius: 5px;padding:7px">To-do list</h1>
+        
+        <div id="input_div" class="inp1">
+            <input type="text" placeholder="Add task here" id="inp">
+            <button id="enter_button" class="add_input">Enter</button>
+        </div>
+        
+        <div class="tasks" id="tasks_space">
+            <h3>Tasks</h3>
+            <div id="tasks"></div>
+        </div>
+        <div class="c_button" id="c_button">
+            <button class="b2" id="add_task">Create new task</button>
+            <button class="b1" id="save_button">clear tasks</button>
+            <!-- <button>Clear tasks</button> -->
+        </div>
+        
+    </div>
+    <script src="./final.js"></script>
+</body>
+</html>
