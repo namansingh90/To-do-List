@@ -13,4 +13,5 @@ A simple, local-storage based To-Do List built with HTML, CSS, and JavaScript.
 - CSS
 - JavaScript (DOM manipulation, LocalStorage)
 
-
+## Live Demo
+[Click here to view](https://namansingh90.github.io/To-do-List/)
